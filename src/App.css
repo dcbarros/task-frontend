@@ -1,0 +1,96 @@
+#root {
+  width: 100%;
+}
+
+.app-container {
+  width: min(760px, calc(100% - 32px));
+  margin: 48px auto;
+}
+
+header {
+  margin-bottom: 32px;
+}
+
+header h1 {
+  margin: 4px 0;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.task-form {
+  margin-bottom: 24px;
+}
+
+.task-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.task-form-row {
+  display: flex;
+  gap: 8px;
+}
+
+.task-form-row input {
+  flex: 1;
+  padding: 10px 12px;
+}
+
+button {
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.task-list {
+  padding: 0;
+  list-style: none;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+
+  padding: 16px 0;
+
+  border-bottom: 1px solid #ccc;
+}
+
+.task-item > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.task-status {
+  font-size: 0.85rem;
+}
+
+.task-completed strong {
+  text-decoration: line-through;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.error-message {
+  padding: 12px;
+
+  border: 1px solid currentColor;
+
+  font-weight: 600;
+}
