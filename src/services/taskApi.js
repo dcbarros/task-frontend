@@ -15,7 +15,9 @@ async function request(path, options = {}) {
             if (body.detail) {
                 message = body.detail
             }
-        } catch {}
+        } catch {
+          // Mantém a mensagem de erro padrão.
+        }
 
         throw new Error(message)
     }
